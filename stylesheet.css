@@ -1,0 +1,1119 @@
+/*foglio di stile*/
+
+@font-face{
+	font-family: 'Philosopher', sans-serif;
+	src: url(Philosopher-Regular.otf);
+}
+
+@font-face{
+	font-family: 'Tangerine', cursive;
+	src: url(Tangerine-Regular.otf);
+}
+
+@font-face{
+	font-family: 'Allura', cursive;
+	src: url(Allura-Regular.ttf);
+}
+
+/*Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+	
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;			
+}
+
+
+/*Titoli e scritte*/
+
+h1{
+	font-family: 'Philosopher', bolder, sans-serif;
+	color: #572b98;
+	text-decoration-line: none;
+	font-size: xx-large;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	
+	float: left;
+	width: 70%;
+	text-align: left;
+}
+
+h1 a{
+	text-decoration: none;
+	margin: 2em 2em 2em 2em;	
+}
+
+h2, h3, h4 {
+	font-family: 'Philosopher', bold, sans-serif;
+	color: #6c46a6;
+	margin: 1em 2em 0.7em 2.5em;
+}
+h2{
+	font-size: 1.8em;
+	margin: 1em 1em 0.2em 1em;
+	letter-spacing: 0.08em;
+	line-height: 1em;
+	border: solid 0.2px;
+	border-color: inherit;
+	text-align: center;
+	padding: 0.2em;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h3.title{
+	position: relative;
+	top: 20%;
+	font-family: 'Allura', cursive;
+	color: #ffffff;
+	font-size: 3.5em;
+	line-height: 1.2em;
+	margin: 1em 1em 1em 2.2em;
+	text-decoration: overline;
+	text-decoration-style: double;
+}
+
+
+h4{
+	font-size: 1.6em;
+}
+
+h4.title{
+	position: relative;
+	top: 35%;
+	font-family: 'Allura', cursive;
+	color: #ffffff;
+	font-size: 2.7em;
+	margin: 0 1em 0 1.5em;
+	font-weight: lighter;
+}
+
+ .cose{
+	font-family: 'Allura', cursive;
+	font-size: 2.5em;
+}
+
+
+h6{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	word-spacing: 0.4em;
+	font-size: 1.5em;
+	margin: 0.5em 2em 0.5em 2.5em;
+	padding: 2%;
+	color: #003576;
+}
+
+h6.incipit{
+	position: relative;
+	top: 20%;
+}
+
+h6.scopri{
+	padding-top: 10%;
+	font-family: 'Allura', cursive;
+	font-size: 3em;
+}
+
+h6 i{
+	font-style: italic;
+}
+
+h6.link{
+	text-transform: uppercase;
+	text-shadow: 3px 2px #e0e0eb;
+	position: relative;
+	margin: 0;
+	text-decoration: none;
+}
+
+p{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.2em;
+	text-align: left;
+	color: #003576;
+	margin: 1em 5em 2em 5em;
+	word-spacing: 0.2em;
+}
+
+p#infogallery{
+	text-align: center;
+	color: #572b98;
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+/*Sfondo principale*/
+
+body.main {
+	background-image: url('img/marble.jpg');
+	background-repeat: repeat;	
+}
+
+/*Link*/
+
+a:active{
+	color: inherit;
+}
+
+a:visited{
+	color: inherit;
+}
+a:hover{
+	color: inherit;
+}
+
+
+/*Header*/
+
+header {
+	border-bottom-width: 0.4em;
+	border-bottom-color: grey;
+	box-shadow: 7px 1px 7px #444444;
+	
+	position: fixed;
+	
+	display: block;
+	
+	width: 100%;
+	height: auto;
+	background-image: url('img/header.jpg'); 
+	padding: 1%;
+	top: 0;
+	z-index: 2;
+}
+
+span#empty{
+	width: 50%;
+}
+
+/*Menu DROPDOWN*/
+
+div#dropdown{
+	display: inline-block;
+	float: right;
+}
+
+a#dropbtn{
+	float: right;
+	background-color: #572b98;
+	opacity: 0.8;
+	color: #ffffff;
+	font-family: 'Allura', cursive;
+	font-size: 2em;
+	padding: 8%;
+	min-width: 100px;
+}
+	
+#list{
+	display: none;
+	overflow: auto;	
+	position: absolute;
+	right: 1%;
+	top: 80%;
+	background-color: #b89ce3;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 100px;
+	z-index: 1;
+}
+
+#list a{
+	color: white;
+	padding: 10% 10%;
+	text-decoration: none;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.3em;
+	display: block;
+}
+
+#list a:hover{
+	background-color: #d4c3ee;
+}
+
+a#dropbtn:hover{
+	cursor: pointer;
+	transition: 0.5s;
+	opacity: 1;
+}
+
+#dropdown:hover #list{
+	display: block;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+
+
+/*Gestione Index*/
+
+div#wrapper{
+	background-color: #202f5a;
+}
+
+/*DIV con titolo*/
+
+div.title{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	min-height: 35em;
+	background-color: #202f5a;
+	overflow: hidden;
+}
+
+img.title{
+	width: auto;
+	height: 100%;
+	display: block;
+}
+
+/*Banner*/
+
+#banner{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	overflow: hidden;
+	
+	width: 100%;
+	height: 100vh;
+	min-height: 35em;
+	margin-bottom: 3%;
+	
+	background-color: azure;
+}
+
+#banner p{
+	text-align: center;
+}
+
+#banner h4{
+	text-align: center;
+}
+
+/*DIV menu*/
+
+div#menu{
+	background-color: azure;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+#menu li{
+	text-align: center;
+	opacity: 0.7;
+	margin: 3%;
+	
+}
+
+#menu li:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+ul, li{
+	list-style: none;
+}
+
+a.page{
+	margin: 0;
+	text-decoration: none;
+}
+
+/*Icone menu*/
+
+img.icon {
+    width: 180px;
+	max-width: 100%;
+    height: auto;  
+}
+
+
+ul.icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center; 
+
+    width: 100%;
+    height: auto;
+}
+
+
+/*Gestione Storia*/
+
+#history{
+	display: inline-block;
+	margin-top: 5%;
+	width: 100%;
+}
+
+div.first{
+	width: 100%;
+	display: block;
+}
+
+div.second{
+	width: 100%;
+	display: block;
+}
+
+
+/*Paragrafi*/
+
+div.sinistra{
+	width: 60%;
+	display: inline-block;
+    float: left;	
+}
+div.destra{
+	width: 60%;
+	display: inline-block;
+	float: right;
+}	
+
+/*Gallerie fotografiche*/
+
+aside#left{
+	width: 40%;
+	display: inline-block;	
+	}
+
+aside#right{
+	width: 40%;
+	display: inline-block;  	
+}
+
+aside img{
+	width: 80%;
+	display: inline-block;
+	margin: 10% 10% 5% 10%;
+	
+	max-width: 100%;
+    height: auto;
+}
+
+input.button{
+	background-color: transparent;
+	color: #003576;
+	display: inline;
+	border: solid 2px;
+	border-color: #003576;
+	border-radius: 10px;
+	padding: 1%;
+	
+}
+ .button#avanti1{
+	float: right;
+}
+
+ .button#avanti2{
+	float: right;
+}
+
+ .button#indietro1{
+	float: left;
+}
+
+ .button#indietro2{
+	float: left;
+}
+	
+input.button:hover{
+	cursor: pointer;
+}
+
+/*Gestione Stili: immagini*/
+
+#style{
+	display: inline-block;
+	width: 100%;
+	margin-top: 5%;
+}
+
+div#stili{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+input{
+	margin: 5%;
+	padding: 5%;
+    border-radius: 25px;
+    opacity: 1;	
+}
+
+input:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+p.right{
+	display: block;
+	margin-top: 3%;
+	line-height: 1em;
+	border: solid 0.2px;
+	border-color: inherit;
+	padding: 3%;
+}
+
+/*Tooltips*/
+
+.tooltip {
+	width: 250px;
+    position: relative;
+    display: inline-block;
+	margin: 1%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000033;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+	display: inline-block;
+    position: relative;
+    z-index: 1;
+    left: 19%;
+   
+	/*Fade*/
+	opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/*Top arrow*/
+.tooltip .tooltiptext:after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #000033 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+	opacity: 0.9;
+}
+
+/*Gestione Gioco*/
+
+#game{
+	display: inline-block;
+	width: 100%;
+	margin-top: 5%;
+}
+
+span#mappa {
+	width: 50%;
+	float: left;
+}
+
+#messaggio{
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#info{
+	margin: 3%;
+}
+
+#miniatura{
+	width: 150px;
+	border: 2px solid;
+	border-color: inherit;
+	position: relative;
+	left: 30%;
+	margin: 3%;
+}
+
+#immagine{
+	max-width: 100%;
+	max-height: 100%;
+	margin: 15%;
+}
+
+img#vangogh{
+	width: 80%;
+	margin: 5%;
+}
+
+
+p#vangogh{
+	margin: 5%;
+}
+
+h6#fine{
+	font-family: 'Allura', cursive;
+	font-size: 4em;
+	visibility: hidden;
+	display: inline-block;
+	text-align: center;
+	padding: 5%;
+}
+
+/*Gestione About*/
+
+#about{
+	display: inline-block;
+	width: 100%;
+	margin-top: 5%;
+}
+
+div.bio{
+	width: 100%;
+}
+ul.biography {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.1em;
+	text-align: left;
+	color: #003576;
+	margin: 4em;
+	display: inline-block;
+	word-spacing: 0.2em;
+}
+
+
+li img.self{
+	width: 120px;
+	float: left;
+	margin: 0 2em 2em 2em;
+	display: inline-block;
+	
+	max-width: 100%;
+    height: auto;
+}
+ 
+li i.name, li#mail{
+	color: #01469b;
+}
+
+li i.corsivo{
+	font-style: italic;
+}
+
+li a.p{
+	color: inherit;
+	text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+li i.maiuscolo{
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+img#validator {
+	width: 88px;
+	height: 31px;
+	float: right;
+	margin: 2%;
+}
+div.cit{
+	display: block;
+	margin: 2% 40% 5% 30%;
+}
+
+div.cit q{
+	text-align: center;
+    font-family: 'Tangerine', cursive;
+	font-size: 2.3em;
+	font-style: italic;
+	color: #003576;
+	word-spacing: 0.2em;
+	margin: 4em 4em 4em 4em;
+	white-space: pre;
+	margin-bottom: 5%;
+}
+	
+/*Footer*/
+
+footer{
+	border-top-width: 0.8em;
+	border-top-color: grey;
+	box-shadow: 7px 1px 7px 1px #444444;
+	text-align: center;
+	
+	width: 100%;
+	display: inline-block;
+	clear: right;
+	right: 0;
+    background: linear-gradient(#81acda,#d5eaff); 
+	padding-bottom: 2.5%;	
+}
+
+footer h4{
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 1em;
+	margin: 1.5em 0 1em 0;
+}
+
+footer p{
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	margin: 0.5em;	
+}
+
+p.maiuscolo{
+	text-transform: uppercase;
+	font-size: 0.75em;
+	margin: 1.5em 0 0 0;
+
+}
+
+
+
+
+
+
+/*Media Query*/
+@media screen and (max-width: 1500px){
+	div.tooltip{
+		margin: 2%;
+	}
+}
+
+@media screen and (max-width: 1425px){
+	span#messaggio{
+		width: 40%;
+	}
+	span#mappa{
+		width: 50%;
+	}
+}
+	
+@media screen and (max-width: 1288px){
+	div.tooltip{
+		margin: 1.5%;
+	}
+}
+
+@media screen and (max-width: 1233px){
+	h3.title{
+		margin: 1em 0.5em 0.5em 2.2em;
+	}
+}
+
+@media screen and (max-width: 1160px){
+	h3.title{
+		margin: 1em 0.5em 0 2.2em;
+	}
+	aside{
+		margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 1130px){
+	input.button{
+		width: auto;
+	}
+	aside#right{
+		margin-bottom: 30%;
+	}
+	div.cit{
+		margin: 1% 1% 5% 1%;
+	}
+	
+}
+
+@media screen and (max-width: 1117px){
+	h3.title{
+		margin: 0 0 1em 1em;
+	}
+	aside img{
+		margin: 10%;
+	}
+}
+
+@media screen and (max-width: 1097px){
+	img.title{
+		width: auto;
+		height: auto;
+		top: 10%;
+		bottom: 0;
+	}
+	aside{
+		width: auto;
+		margin: auto;
+	}
+	.sinistra, .destra{
+		width: 40%;
+	}
+}
+
+	
+@media screen and (max-width: 1058px){
+	h3.title{
+		margin: 0 0.5em 0 2em;
+	}
+	#info{
+		margin: 5%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#dropbtn{
+		font-size: 2.5em;
+		padding: 5%;
+	}
+	#history, #style, #game, #about {
+		margin-top: 10%;
+	}
+	body {
+		font-size: 100%;
+    }
+	h3.title{
+		font-size: 3em;
+		margin: 0 0 0 1.2em;
+		width: 100%;
+	}
+	h4.title {
+		margin: 0 0 0 1em;
+		width: 100%;
+	}
+	img.title{
+		width: 80%;
+		height: 90%;
+		position: relative;
+		bottom: 0;
+		top: 10%;
+	}
+	ul.icons {
+		flex-wrap: wrap;
+	} 
+	h6.link{
+		width: auto;
+	}
+	div.sinistra{
+		width: 100%;
+		display: inline-block;
+	}
+	div.sinistra p{
+		text-align: center;
+	}
+	div.sinistra h3{
+		text-align: center;
+	}
+	div.destra{
+		width: 100%;
+		display: inline-block;
+	}
+	div.destra p{
+		text-align: center;
+	}
+	div.destra h3{
+		text-align: center;
+	}
+	aside{
+		width: 100%;
+		display: inline-block;
+	}
+	aside#right{
+		margin-bottom: auto;
+	}
+	aside img{
+		position: relative;
+		left: 80%;
+	}
+	aside input {
+		position: relative;
+		left: 80%;
+	}
+	#infogallery{
+		display: inline-block;
+		position: relative;
+		left: 80%;
+        margin: 0 0 3em 0;
+		width: 100%;
+	}
+	#immagine{
+		margin: 10%;
+	}
+	div.cit {
+		width: 50%;
+	} 
+}
+
+@media screen and (max-width: 880px){
+	div.title{
+		min-height: auto;
+	}
+	img.title{
+		width: auto;
+		height: 80%;
+		bottom: 0;
+		top: 20%;
+	}
+	h6#fine{
+		padding: 3%;
+		margin: 5%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	h4.title{
+		font-size: 2.5em;
+	}
+	#miniatura{
+		margin: 5%;
+	}
+	div.cit q{
+		font-size: 1.8em;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	header{
+		height: 3em;
+	}
+	a#dropbtn{
+		padding: 1% 5%;
+	}
+	div.title{
+		height: auto;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	section#titles{
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 10%;
+		padding: 10%;
+	}
+	h3.title{
+		font-size: 3em;
+        margin: 0 0 1em 0;
+	}
+	h4.title{
+		font-size: 2.5em;
+		margin: 0;	
+	}
+	img.title{
+		width: 100%;
+		height: auto;
+	}
+	div#banner{
+		height: auto;
+	}
+	img.icon{
+		width: 75%;
+		margin: 1%;
+		padding: 3%;
+	}
+	div.stili input{
+		padding: 2%;
+	}
+}
+
+@media screen and (max-width: 651px){
+	span#messaggio{
+		display: block;
+		width: 100%;
+	}
+	span#mappa{
+		display: block;
+		width: 80%;
+		justify-content: center;		
+	}
+}
+
+@media screen and (max-width: 614px){
+	div q{
+		display: none;
+	}
+	h6#fine{
+		padding: 1%;
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (max-width: 480px){
+	header{
+		height: 2.5em;
+		display: block;
+		float: none;
+		box-shadow: none;
+	}
+	h1{
+		font-size: 1.6em;
+		display: block;
+		float: none;
+	}	
+	h3.title{
+		font-size: 2.7em;
+	}
+	h4.title{
+		font-size: 2.2em;
+	}
+	#dropdown{
+		display: block;
+		float: none;
+		width: 100%;
+		height: 2.5em;
+		position: relative;
+		top: 7px;
+	}
+	#dropbtn{
+		float: none;
+		text-align:left;
+		width: 100%;
+	}
+	#list{
+		width: auto;
+		top: 0;
+		right: 0;
+	}
+	h6.scopri{
+		font-size: 2.5em;
+	}
+	#history, #style, #game, #about {
+		margin-top: 20%;
+	}
+	li img{
+		width: 60%;
+		display: inline-block;
+	}
+	li{
+		display: inline-block;
+	}
+	h6#fine{
+		padding: 0;
+		font-size: 3.2em;
+	}
+	.biography li{
+	    margin: 3%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	p{
+		font-size: 1em;
+		margin: 1em 3em 2em 3em;
+	}
+	h6{
+		font-size: 1.3em;
+	}
+	section#titles{
+		margin-bottom: 20%;
+	}
+	h6.scopri{
+		font-size: 2em;
+	}
+	h6#fine{
+		font-size: 3em;
+	}
+	ul.biography{
+		margin: 2em;
+	}
+	footer p{
+		text-align: center;
+	}
+	p.right{
+	padding-top: 7%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	header{
+		height: 2em;
+	}
+	h1{
+		font-size: 1.2em;
+	}	
+	#dropdown{
+		height: 2em;
+	}
+	#dropbtn{
+		font-size: 1.2em;
+	}
+	#list{
+		width: 20%;
+	}
+	section#titles{
+		margin-bottom: 40%;
+	}
+	h4.cose{
+		font-size: 2em;
+	}
+	div.sinistra p{
+		margin: 20px;
+	}
+	div.destra p{
+		margin: 20px;
+	}
+	li{
+		text-align: center;
+	}
+	div.tooltip{
+		margin: auto;
+	}
+	input{
+		flex-wrap: nowrap;
+		margin: 2%;
+	}
+	li img.self{
+		margin: 2em 2em 2em 2em;
+	}
+	footer{
+		width: auto;
+		clear: right;
+		margin-top: 1%;
+	}
+}
+
+/*codice css specifico per chrome e safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+div.title {
+	margin-top: 20px; 
+}
+h3.title{
+	text-decoration-style: initial;
+}
+img.title{
+	height: 90%;
+	position: relative;
+	bottom: -10%;
+}
+input{
+	padding: 2%;
+}
+footer{
+	padding-bottom: 4%;
+}
+#mappa area:hover{
+	cursor: default;
+}
+}
